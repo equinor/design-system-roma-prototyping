@@ -177,6 +177,143 @@ describe('DatePicker', () => {
     expect(disabledDate).toHaveAttribute('aria-disabled', 'true')
   })
 
+  describe('Bug #4477: typing "3" in day field', () => {
+    it('should NOT auto-advance focus after typing "3" in day field (en-US)', async () => {
+      render(
+        <I18nProvider locale={'en-US'}>
+          <DatePicker label={'Datepicker'} value={null} />
+        </I18nProvider>,
+      )
+      const dayEl = screen.getByText('dd')
+      await userEvent.click(dayEl)
+      await userEvent.keyboard('3')
+      // Focus should stay on day field — "30" and "31" are still valid
+      expect(dayEl).toHaveFocus()
+    })
+
+    it('should NOT auto-advance focus after typing "3" in day field (no)', async () => {
+      render(
+        <I18nProvider locale={'no'}>
+          <DatePicker label={'Datepicker'} value={null} />
+        </I18nProvider>,
+      )
+      const dayEl = screen.getByText('dd')
+      await userEvent.click(dayEl)
+      await userEvent.keyboard('3')
+      expect(dayEl).toHaveFocus()
+    })
+
+    it('should allow typing "31" in day field from empty state (en-US)', async () => {
+      render(
+        <I18nProvider locale={'en-US'}>
+          <DatePicker label={'Datepicker'} value={null} />
+        </I18nProvider>,
+      )
+      const dayEl = screen.getByText('dd')
+      await userEvent.click(dayEl)
+      await userEvent.keyboard('31')
+      expect(dayEl).toHaveAttribute('aria-valuetext', '31')
+    })
+
+    it('should allow typing "31" in day field from empty state (no)', async () => {
+      render(
+        <I18nProvider locale={'no'}>
+          <DatePicker label={'Datepicker'} value={null} />
+        </I18nProvider>,
+      )
+      const dayEl = screen.getByText('dd')
+      await userEvent.click(dayEl)
+      await userEvent.keyboard('31')
+      expect(dayEl).toHaveAttribute('aria-valuetext', '31')
+    })
+
+    it('should have valuemax 31 for day field when no date is selected (en-US)', () => {
+      render(
+        <I18nProvider locale={'en-US'}>
+          <DatePicker label={'Datepicker'} value={null} />
+        </I18nProvider>,
+      )
+      const dayEl = screen.getByText('dd')
+      expect(dayEl).toHaveAttribute('aria-valuemax', '31')
+    })
+
+    it('should have valuemax 31 for day field when no date is selected (no)', () => {
+      render(
+        <I18nProvider locale={'no'}>
+          <DatePicker label={'Datepicker'} value={null} />
+        </I18nProvider>,
+      )
+      const dayEl = screen.getByText('dd')
+      expect(dayEl).toHaveAttribute('aria-valuemax', '31')
+    })
+  })
+
+  it('should display validation errors in the configured locale', () => {
+    const maxDate = new Date(2024, 0, 1)
+    const outOfRangeDate = new Date(2024, 5, 15)
+
+    const { container, rerender } = render(
+      <I18nProvider locale={'en-US'}>
+        <DatePicker
+          label={'Datepicker'}
+          value={outOfRangeDate}
+          maxValue={maxDate}
+        />
+      </I18nProvider>,
+    )
+
+    // English: "Value must be ... or earlier."
+    expect(container.textContent).toMatch(/Value must be/)
+
+    rerender(
+      <I18nProvider locale={'nb-NO'}>
+        <DatePicker
+          label={'Datepicker'}
+          value={outOfRangeDate}
+          maxValue={maxDate}
+        />
+      </I18nProvider>,
+    )
+
+    // Norwegian: "Verdien må være ... eller tidligere."
+    expect(container.textContent).toMatch(/Verdien/)
+  })
+
+  it('should display localized rangeUnderflow message', () => {
+    const minDate = new Date(2024, 11, 31)
+    const tooEarlyDate = new Date(2024, 0, 1)
+
+    const { container } = render(
+      <I18nProvider locale={'nb-NO'}>
+        <DatePicker
+          label={'Datepicker'}
+          value={tooEarlyDate}
+          minValue={minDate}
+        />
+      </I18nProvider>,
+    )
+
+    // Norwegian: "Verdien må være ... eller senere."
+    expect(container.textContent).toMatch(/Verdien/)
+  })
+
+  it('should display localized message for unavailable dates', () => {
+    const unavailableDate = new Date(2024, 4, 30)
+
+    const { container } = render(
+      <I18nProvider locale={'nb-NO'}>
+        <DatePicker
+          label={'Datepicker'}
+          value={unavailableDate}
+          isDateUnavailable={(d) => d.getDate() === 30}
+        />
+      </I18nProvider>,
+    )
+
+    // Norwegian: "Valgt dato utilgjengelig."
+    expect(container.textContent).toMatch(/utilgjengelig/)
+  })
+
   it('should be localized', () => {
     const date = new Date(2024, 4, 4)
 

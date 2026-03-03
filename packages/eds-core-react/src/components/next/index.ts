@@ -30,7 +30,12 @@ export type { InputProps } from './Input'
 export { TextField } from './TextField'
 
 export { Chip } from './Chip'
-export type { ChipProps } from './Chip'
+export type {
+  ChipProps,
+  ChipColor,
+  ChipSemanticColor,
+  ChipDatavizColor,
+} from './Chip'
 export type { TextFieldProps } from './TextField'
 
 export { Badge } from './Badge'
