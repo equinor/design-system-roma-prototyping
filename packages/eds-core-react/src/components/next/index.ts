@@ -30,6 +30,14 @@ export type { InputProps } from './Input'
 export { TextField } from './TextField'
 export type { TextFieldProps } from './TextField'
 
+export { ChipRl } from './ChipRl'
+export type {
+  ChipRlProps,
+  ChipRlColor,
+  ChipRlSemanticColor,
+  ChipRlDatavizColor,
+} from './ChipRl'
+
 export { TextArea } from './TextArea'
 export type { TextAreaProps } from './TextArea'
 
@@ -60,3 +68,13 @@ export type { ChipProps, ChipTone, ChipVariant } from './Chip'
 
 export { Divider } from './Divider'
 export type { DividerProps } from './Divider'
+
+export { Badge } from './Badge'
+export type {
+  BadgeProps,
+  BadgeSize,
+  BadgeEmphasis,
+  BadgeColor,
+  BadgeSemanticColor,
+  BadgeDatavizColor,
+} from './Badge'

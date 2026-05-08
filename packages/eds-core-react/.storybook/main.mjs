@@ -85,6 +85,7 @@ const config = {
           ...(config.optimizeDeps?.include ?? []),
           '@storybook/addon-docs/mdx-react-shim',
           '@storybook/addon-docs/blocks',
+          '@equinor/eds-icons',
         ],
       },
     }

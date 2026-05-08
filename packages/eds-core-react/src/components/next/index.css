@@ -33,5 +33,7 @@
 @import './Tooltip/tooltip.css';
 @import './Banner/banner.css';
 @import './Chip/chip.css';
+@import './ChipRl/chip-rl.css';
+@import './Badge/badge.css';
 @import './Divider/divider.css';
 
