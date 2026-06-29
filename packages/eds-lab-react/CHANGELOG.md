@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.12.0](https://github.com/equinor/design-system-roma-prototyping/compare/eds-lab-react@v0.11.0...eds-lab-react@v0.12.0) (2026-06-29)
+
+
+### ✨ Added
+
+* **eds-color-palette-generator:** fix memory leak from uncleaned debounce timeouts on unmount ([#4260](https://github.com/equinor/design-system-roma-prototyping/issues/4260)) ([b226edb](https://github.com/equinor/design-system-roma-prototyping/commit/b226edbc087b1f10ef0a2108d927939819fedc0e))
+* **eds-core-react, eds-utils:** Create base typography component and opinionated heading and paragraph ([b2130c6](https://github.com/equinor/design-system-roma-prototyping/commit/b2130c6f2be82e63549caacf876f263253292f87)), closes [#4125](https://github.com/equinor/design-system-roma-prototyping/issues/4125)
+* support React 18 and 19 ([#4648](https://github.com/equinor/design-system-roma-prototyping/issues/4648)) ([38ff591](https://github.com/equinor/design-system-roma-prototyping/commit/38ff5918f95a799e1d1ab44178b4647b6dd00887))
+
+
+### 🐛 Fixed
+
+* **config:** revert .mjs extension for ESM builds ([#4482](https://github.com/equinor/design-system-roma-prototyping/issues/4482)) ([4fb957f](https://github.com/equinor/design-system-roma-prototyping/commit/4fb957f0a9885e0004e4951e9b5a846b8f0c443d))
+* **config:** use .mjs extension for ESM builds ([#4463](https://github.com/equinor/design-system-roma-prototyping/issues/4463)) ([476a40e](https://github.com/equinor/design-system-roma-prototyping/commit/476a40ebfd73080e469898ae45d78fcb6cd612d9))
+* Use semver ranges for internal eds dependencies ([#4163](https://github.com/equinor/design-system-roma-prototyping/issues/4163)) ([7cc8abe](https://github.com/equinor/design-system-roma-prototyping/commit/7cc8abe64f64f4e5a9081e21e19f71947f354c14))
+
 ## [0.11.0](https://github.com/equinor/design-system/compare/eds-lab-react@v0.10.2...eds-lab-react@v0.11.0) (2026-03-20)
 
 

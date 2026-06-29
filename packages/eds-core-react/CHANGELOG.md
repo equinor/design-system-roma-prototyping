@@ -5,6 +5,70 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.0](https://github.com/equinor/design-system-roma-prototyping/compare/eds-core-react@v2.6.1...eds-core-react@v3.0.0) (2026-06-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* **eds-tokens:** update codeSyntax of the spacing and typography tokens ([#4227](https://github.com/equinor/design-system-roma-prototyping/issues/4227))
+* **eds-core-react, eds-tokens:** add spacing foundation variables, fix names in old variables and remove density specific spacing variables. eds-tokens package is now a peerDependency in eds-core-react to support using the new variables. ([#4200](https://github.com/equinor/design-system-roma-prototyping/issues/4200))
+* **eds-tokens,eds-core-react:** move typography css foundation and remove core style ([#4173](https://github.com/equinor/design-system-roma-prototyping/issues/4173))
+* **eds-core-react, eds-utils:** Improve onChange handler typing for TextField component and remove multiline support ([#4134](https://github.com/equinor/design-system-roma-prototyping/issues/4134))
+
+### ✨ Added
+
+* Add chipCount prop to limit the amount of chips shown ([#4805](https://github.com/equinor/design-system-roma-prototyping/issues/4805)) ([e0c44ed](https://github.com/equinor/design-system-roma-prototyping/commit/e0c44ed76b7354c6a0b7e1767a57785bfb49e50c))
+* adds chips in autocomplete multiple ([#4345](https://github.com/equinor/design-system-roma-prototyping/issues/4345)) ([faaa8ad](https://github.com/equinor/design-system-roma-prototyping/commit/faaa8ad967eea30d8cb3dd2d2087b689c09474e5))
+* CSS-first typography system and Foundation element styles ([#4660](https://github.com/equinor/design-system-roma-prototyping/issues/4660)) ([284fbf6](https://github.com/equinor/design-system-roma-prototyping/commit/284fbf667d497ae24410ffbb9f7acff1e5e91c36)), closes [#4659](https://github.com/equinor/design-system-roma-prototyping/issues/4659)
+* **eds-color-palette-generator:** fix memory leak from uncleaned debounce timeouts on unmount ([#4260](https://github.com/equinor/design-system-roma-prototyping/issues/4260)) ([b226edb](https://github.com/equinor/design-system-roma-prototyping/commit/b226edbc087b1f10ef0a2108d927939819fedc0e))
+* **eds-core-react, eds-tokens:** add spacing foundation variables, fix names in old variables and remove density specific spacing variables. eds-tokens package is now a peerDependency in eds-core-react to support using the new variables. ([#4200](https://github.com/equinor/design-system-roma-prototyping/issues/4200)) ([7621866](https://github.com/equinor/design-system-roma-prototyping/commit/7621866194f67d4118167285e9209c5a5194217c))
+* **eds-core-react, eds-utils:** Create base typography component and opinionated heading and paragraph ([b2130c6](https://github.com/equinor/design-system-roma-prototyping/commit/b2130c6f2be82e63549caacf876f263253292f87)), closes [#4125](https://github.com/equinor/design-system-roma-prototyping/issues/4125)
+* **eds-core-react:** Autocomplete - always show "add new option" when onAddNewOption is provided ([#3924](https://github.com/equinor/design-system-roma-prototyping/issues/3924)) ([9ec6979](https://github.com/equinor/design-system-roma-prototyping/commit/9ec6979ee89c4a468947ae1d931dd4b62c66cc6a))
+* **eds-core-react:** create button label typography css ([#4660](https://github.com/equinor/design-system-roma-prototyping/issues/4660)) ([04145ba](https://github.com/equinor/design-system-roma-prototyping/commit/04145ba736a474ddc2588b53a6a5f642dc74ad65))
+* **eds-tokens,eds-core-react:** move typography css foundation and remove core style ([#4173](https://github.com/equinor/design-system-roma-prototyping/issues/4173)) ([0a20351](https://github.com/equinor/design-system-roma-prototyping/commit/0a20351e68d61334f877bc6ef0a05fcfc1c99c95))
+* **eds-tokens:** generate spacing and typography variables ([#4250](https://github.com/equinor/design-system-roma-prototyping/issues/4250)) ([6a5ef2c](https://github.com/equinor/design-system-roma-prototyping/commit/6a5ef2cf7a3821fd67809123f20f5f647ca43935))
+* **eds-tokens:** update codeSyntax of the spacing and typography tokens ([#4227](https://github.com/equinor/design-system-roma-prototyping/issues/4227)) ([31a6abc](https://github.com/equinor/design-system-roma-prototyping/commit/31a6abc2d99aa9e6877358718ff57ad6d19be7b3))
+* Field + HelperMessage ([#4332](https://github.com/equinor/design-system-roma-prototyping/issues/4332)) ([6bbbad5](https://github.com/equinor/design-system-roma-prototyping/commit/6bbbad5feb18963054ef502cc83a6751c7d8592a))
+* **next:** ✨ add Input and TextField component for EDS 2.0 ([8dd4dca](https://github.com/equinor/design-system-roma-prototyping/commit/8dd4dca74a6699a5cd1dfbf8977117c9e48fc445))
+* support React 18 and 19 ([#4648](https://github.com/equinor/design-system-roma-prototyping/issues/4648)) ([38ff591](https://github.com/equinor/design-system-roma-prototyping/commit/38ff5918f95a799e1d1ab44178b4647b6dd00887))
+
+
+### 🐛 Fixed
+
+* 🐛 Autocomplete - restore onBlur and onKeyDown event handler support ([#4396](https://github.com/equinor/design-system-roma-prototyping/issues/4396)) ([39e8e97](https://github.com/equinor/design-system-roma-prototyping/commit/39e8e97a8e1eb46c42cd7330dc3d2e7c7059a849))
+* 🐛 Fix multiple height in compact density mode ([#4468](https://github.com/equinor/design-system-roma-prototyping/issues/4468)) ([b01311b](https://github.com/equinor/design-system-roma-prototyping/commit/b01311bbea2a283330a1bc34ddeb8763ae71b486))
+* 🚑️ output next bundle to separate directory to prevent export overwrite ([#4405](https://github.com/equinor/design-system-roma-prototyping/issues/4405)) ([a53e64e](https://github.com/equinor/design-system-roma-prototyping/commit/a53e64e1efe10a45b23a7df7e2be119a5358a658))
+* adjust release to patch version 2.3.1 ([8bf323e](https://github.com/equinor/design-system-roma-prototyping/commit/8bf323ee75c8477338c719e20a208f64835fb7c2))
+* **config:** revert .mjs extension for ESM builds ([#4482](https://github.com/equinor/design-system-roma-prototyping/issues/4482)) ([4fb957f](https://github.com/equinor/design-system-roma-prototyping/commit/4fb957f0a9885e0004e4951e9b5a846b8f0c443d))
+* **config:** use .mjs extension for ESM builds ([#4463](https://github.com/equinor/design-system-roma-prototyping/issues/4463)) ([476a40e](https://github.com/equinor/design-system-roma-prototyping/commit/476a40ebfd73080e469898ae45d78fcb6cd612d9))
+* Corrected tsconfig.build.json to ensure proper type declaration structure ([#4172](https://github.com/equinor/design-system-roma-prototyping/issues/4172)) ([f1d07e2](https://github.com/equinor/design-system-roma-prototyping/commit/f1d07e24298a939d22a7832c8d1107f8d8d0a7de))
+* DatePicker displays correct day for configured timezone ([#4622](https://github.com/equinor/design-system-roma-prototyping/issues/4622)) ([de33a5e](https://github.com/equinor/design-system-roma-prototyping/commit/de33a5e2f685bd32341e3cd28fda282b44d53d66))
+* DatePicker Esc Key Closing Entire Dialog ([#4346](https://github.com/equinor/design-system-roma-prototyping/issues/4346)) ([4375f39](https://github.com/equinor/design-system-roma-prototyping/commit/4375f3995c0f167b2077aedc2cbe315ea7c66eb9))
+* **eds-core-react, eds-utils:** 🐛Table - Fix Firefox table header wrapping issue ([#3957](https://github.com/equinor/design-system-roma-prototyping/issues/3957)) ([a973b81](https://github.com/equinor/design-system-roma-prototyping/commit/a973b819fe36fd83870cbacccc4e102274a5a05b))
+* **eds-core-react, eds-utils:** Improve onChange handler typing for TextField component and remove multiline support ([#4134](https://github.com/equinor/design-system-roma-prototyping/issues/4134)) ([72c5f78](https://github.com/equinor/design-system-roma-prototyping/commit/72c5f78c1eba95beeb1e4363b3808168f3683745))
+* **eds-core-react:** 🐛 Autocomplete - should start at selected index and preserve scroll position ([#3996](https://github.com/equinor/design-system-roma-prototyping/issues/3996)) ([d5d51a7](https://github.com/equinor/design-system-roma-prototyping/commit/d5d51a790d5f2fe98c747e7ff9b37041997d44c6))
+* **eds-core-react:** 🐛 Update Tooltip component to use mergeRefs ([#4130](https://github.com/equinor/design-system-roma-prototyping/issues/4130)) ([a7f42ce](https://github.com/equinor/design-system-roma-prototyping/commit/a7f42cee4e1287bcfba90007ca7544dfef18bf12))
+* **eds-core-react:** rename text-icon className to eds-typography-text-icon to prevent conflicts and support using typography component as link ([#4233](https://github.com/equinor/design-system-roma-prototyping/issues/4233)) ([9069372](https://github.com/equinor/design-system-roma-prototyping/commit/906937262b7cf395a03d1867170791d046fd4734))
+* **eds-core-react:** sidebar links not showing tooltip when sidebar is collapsed ([#4068](https://github.com/equinor/design-system-roma-prototyping/issues/4068)) ([aa2622a](https://github.com/equinor/design-system-roma-prototyping/commit/aa2622aa6cd278560c0fa1b89203c336775f0f65))
+* **eds-core-react:** stabilise DatePicker popover size when navigating months ([#4620](https://github.com/equinor/design-system-roma-prototyping/issues/4620)) ([04ae29a](https://github.com/equinor/design-system-roma-prototyping/commit/04ae29aa1961d78e2a1d0c8140138f09b5376c48)), closes [#4376](https://github.com/equinor/design-system-roma-prototyping/issues/4376)
+* **eds-core-react:** update storybook version ([22a21fd](https://github.com/equinor/design-system-roma-prototyping/commit/22a21fdcdf7c76e514e523752466fd6b9b3d763f))
+* **eds-core-react:** use legacy token for Autocomplete chip outline ([#4776](https://github.com/equinor/design-system-roma-prototyping/issues/4776)) ([aa01f2c](https://github.com/equinor/design-system-roma-prototyping/commit/aa01f2c1209ca51869920e46142497b6f12674d2))
+* emit explicit dark-scope rules instead of light-dark() in tokens ([#4864](https://github.com/equinor/design-system-roma-prototyping/issues/4864)) ([e519ff2](https://github.com/equinor/design-system-roma-prototyping/commit/e519ff2113e13f7a826772cebc9abeda2f04cee7))
+* export TypographyVariants from public API ([#4470](https://github.com/equinor/design-system-roma-prototyping/issues/4470)) ([13fb583](https://github.com/equinor/design-system-roma-prototyping/commit/13fb583f7e5ab456eabb9a3d1b40af46a42e0ded))
+* forward child refs in Tooltip and TabList on React 18 ([#4904](https://github.com/equinor/design-system-roma-prototyping/issues/4904)) ([d095239](https://github.com/equinor/design-system-roma-prototyping/commit/d0952399a167ec5a54e7b99353007d6649191d02))
+* localise DatePicker validation messages based on configured locale ([#4576](https://github.com/equinor/design-system-roma-prototyping/issues/4576)) ([410bbc2](https://github.com/equinor/design-system-roma-prototyping/commit/410bbc24054efe61d971d4ac4f797954279fc183))
+* normalize link font-size and font-weight in Table cells ([#4578](https://github.com/equinor/design-system-roma-prototyping/issues/4578)) ([1739bd6](https://github.com/equinor/design-system-roma-prototyping/commit/1739bd66f585b8b4aac730307456c0d692d83e51))
+* preserve user-provided id on Autocomplete input ([#4682](https://github.com/equinor/design-system-roma-prototyping/issues/4682)) ([85a4301](https://github.com/equinor/design-system-roma-prototyping/commit/85a4301d22220d1147551a3d778dd48d34493f0e))
+* prevent Datepicker day field from eagerly auto-advancing on "3" ([#4553](https://github.com/equinor/design-system-roma-prototyping/issues/4553)) ([b5c98d3](https://github.com/equinor/design-system-roma-prototyping/commit/b5c98d373443b7c2ba5ff9e78dbd88fc30b25df2))
+* release eds-core-react@2.6.1 and eds-utils@2.2.1 with fixed workspace deps ([49fc5b7](https://github.com/equinor/design-system-roma-prototyping/commit/49fc5b7ac579829ec068a57f6ded3236448edff2))
+* resolve runtime errors in Autocomplete and DatePicker ([#4646](https://github.com/equinor/design-system-roma-prototyping/issues/4646)) ([ad48343](https://github.com/equinor/design-system-roma-prototyping/commit/ad4834334923a02bb414038083489f3961583080))
+* restrict /next exports to beta releases only ([#4395](https://github.com/equinor/design-system-roma-prototyping/issues/4395)) ([cff5521](https://github.com/equinor/design-system-roma-prototyping/commit/cff55216bd7672d40653693e3d0d0ce6d8423715))
+* unknown and high security alerts from radix. ([#4313](https://github.com/equinor/design-system-roma-prototyping/issues/4313)) ([3a9a666](https://github.com/equinor/design-system-roma-prototyping/commit/3a9a666f9188a1d0bee0f3ebcff1a7de8b03fe18))
+* update autocomplete types to require optionLabel when using objects and optional for strings/numbers ([#4279](https://github.com/equinor/design-system-roma-prototyping/issues/4279)) ([848c16f](https://github.com/equinor/design-system-roma-prototyping/commit/848c16f035da2480c99f24d635d54feaabc9a03a))
+* Update Card.docs.mdx ([7fc1205](https://github.com/equinor/design-system-roma-prototyping/commit/7fc1205b3c7bb2358f666524346027ccb7a52a92))
+* update stories to use callback refs instead ([#4195](https://github.com/equinor/design-system-roma-prototyping/issues/4195)) ([3492802](https://github.com/equinor/design-system-roma-prototyping/commit/34928027b8b486e2d22fc41cae6bdd8a50693da6))
+* Use semver ranges for internal eds dependencies ([#4163](https://github.com/equinor/design-system-roma-prototyping/issues/4163)) ([7cc8abe](https://github.com/equinor/design-system-roma-prototyping/commit/7cc8abe64f64f4e5a9081e21e19f71947f354c14))
+
 ## [2.6.1](https://github.com/equinor/design-system/compare/eds-core-react@v2.6.0...eds-core-react@v2.6.1) (2026-05-20)
 
 
