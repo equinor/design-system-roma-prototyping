@@ -58,6 +58,7 @@ const sidebars: SidebarsConfig = {
         id: 'components/inputs/inputs',
       },
       items: [
+        'components/inputs/autocomplete',
         'components/inputs/button',
         'components/inputs/search',
         'components/inputs/selection_controls',
@@ -89,6 +90,11 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Navigation',
       items: ['components/navigation/link'],
+    },
+    {
+      type: 'category',
+      label: 'Surfaces',
+      items: ['components/surfaces/accordion', 'components/surfaces/divider'],
     },
   ],
   //Foundation Section

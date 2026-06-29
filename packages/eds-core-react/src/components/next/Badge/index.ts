@@ -1,9 +1,7 @@
 export { Badge } from './Badge'
 export type {
   BadgeProps,
-  BadgeSize,
+  BadgeTone,
   BadgeEmphasis,
-  BadgeColor,
-  BadgeSemanticColor,
-  BadgeDatavizColor,
+  BadgeVariant,
 } from './Badge.types'

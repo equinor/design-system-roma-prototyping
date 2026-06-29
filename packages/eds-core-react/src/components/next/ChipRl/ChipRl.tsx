@@ -40,7 +40,7 @@ export const ChipRl = forwardRef<HTMLDivElement, ChipRlProps>(function ChipRl(
 ) {
   if (!onClick && !onDelete) {
     console.warn(
-      'ChipRl: A chip must have at least one of `onClick` or `onDelete`.',,
+      'ChipRl: A chip must have at least one of `onClick` or `onDelete`.',
     )
   }
   if (dropdown && onDelete) {
@@ -114,7 +114,10 @@ export const ChipRl = forwardRef<HTMLDivElement, ChipRlProps>(function ChipRl(
       {...rest}
     >
       {animateCheck ? (
-        <span className="eds-chip-rl__check" data-active={selected || undefined}>
+        <span
+          className="eds-chip-rl__check"
+          data-active={selected || undefined}
+        >
           <Icon data={check} size="xs" />
         </span>
       ) : (
