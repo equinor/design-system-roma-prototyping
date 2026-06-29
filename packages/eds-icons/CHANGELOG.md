@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.0](https://github.com/equinor/design-system-roma-prototyping/compare/eds-icons@v1.5.1...eds-icons@v1.6.0) (2026-06-29)
+
+
+### ✨ Added
+
+* **eds-icons:** add dark_mode icon ([#4926](https://github.com/equinor/design-system-roma-prototyping/issues/4926)) ([03bdd0c](https://github.com/equinor/design-system-roma-prototyping/commit/03bdd0cc1a476cbeb906e739e7069eb157f30105))
+* **eds-icons:** add manage_accounts icon ([#4556](https://github.com/equinor/design-system-roma-prototyping/issues/4556)) ([9835dd2](https://github.com/equinor/design-system-roma-prototyping/commit/9835dd28e0efc4821fda798cc6356e5de6a603b7))
+* **eds-icons:** add partial_completion icon ([#4803](https://github.com/equinor/design-system-roma-prototyping/issues/4803)) ([d2f086e](https://github.com/equinor/design-system-roma-prototyping/commit/d2f086e35f57d1b6c96362f72d4f52ef6da6c8c9))
+* **eds-icons:** sync new icons from Figma ([05e4a85](https://github.com/equinor/design-system-roma-prototyping/commit/05e4a85f9ba5b5dde360a93e4f9f5f5bf897393d))
+* new icons Horizontal unfold more + Horizontal unfold less  ([#4231](https://github.com/equinor/design-system-roma-prototyping/issues/4231)) ([df50b34](https://github.com/equinor/design-system-roma-prototyping/commit/df50b34446faba98880df1e8f847fab74f2ecb37))
+
+
+### 🐛 Fixed
+
+* **config:** revert .mjs extension for ESM builds ([#4482](https://github.com/equinor/design-system-roma-prototyping/issues/4482)) ([4fb957f](https://github.com/equinor/design-system-roma-prototyping/commit/4fb957f0a9885e0004e4951e9b5a846b8f0c443d))
+* **config:** use .mjs extension for ESM builds ([#4463](https://github.com/equinor/design-system-roma-prototyping/issues/4463)) ([476a40e](https://github.com/equinor/design-system-roma-prototyping/commit/476a40ebfd73080e469898ae45d78fcb6cd612d9))
+* **eds-icons:** republish to include dark_mode icon ([#5112](https://github.com/equinor/design-system-roma-prototyping/issues/5112)) ([593a0bd](https://github.com/equinor/design-system-roma-prototyping/commit/593a0bd38f71cfdb7f41d73820cf7f61f8eb27b8))
+* **eds-icons:** resync grid_off to fix blurry rendering ([#4845](https://github.com/equinor/design-system-roma-prototyping/issues/4845)) ([748352d](https://github.com/equinor/design-system-roma-prototyping/commit/748352dfc294e2b45b25ac3509a889268b89b39f))
+
 ## [1.5.1](https://github.com/equinor/design-system/compare/eds-icons@v1.5.0...eds-icons@v1.5.1) (2026-06-25)
 
 

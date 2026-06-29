@@ -4,6 +4,64 @@ All notable changes to EDS 2.0 beta components (`@equinor/eds-core-react/next`) 
 
 These are experimental components available under the `/next` entry point. They follow semantic versioning with a `beta` prerelease tag.
 
+## [2.9.0-beta.1](https://github.com/equinor/design-system-roma-prototyping/compare/eds-core-react-next@v2.8.0-beta.1...eds-core-react-next@v2.9.0-beta.1) (2026-06-29)
+
+
+### ✨ Added
+
+* ✨ Implement Button 2.0 component ([#4389](https://github.com/equinor/design-system-roma-prototyping/issues/4389)) ([94c9fbc](https://github.com/equinor/design-system-roma-prototyping/commit/94c9fbc148833e611f4c3b6ed9df6baf7a3b3d09))
+* Accordion EDS 2.0 ([#4912](https://github.com/equinor/design-system-roma-prototyping/issues/4912)) ([fbe6874](https://github.com/equinor/design-system-roma-prototyping/commit/fbe6874a31249ada38656cd1444f770cf4004554))
+* add asChild prop to Button (next) ([#4810](https://github.com/equinor/design-system-roma-prototyping/issues/4810)) ([06d961a](https://github.com/equinor/design-system-roma-prototyping/commit/06d961a49ad79a48e383a23265321d7c1babea16))
+* add Autocomplete component to next/ ([#4808](https://github.com/equinor/design-system-roma-prototyping/issues/4808)) ([10e0217](https://github.com/equinor/design-system-roma-prototyping/commit/10e0217f266a97ef09f6972f6e4824d83ff29049))
+* add Banner component to next/ ([#4626](https://github.com/equinor/design-system-roma-prototyping/issues/4626)) ([44893b5](https://github.com/equinor/design-system-roma-prototyping/commit/44893b552bff463ae26dfc20c2a57a46d3108995))
+* add Chip component to next/ ([#4802](https://github.com/equinor/design-system-roma-prototyping/issues/4802)) ([81c6111](https://github.com/equinor/design-system-roma-prototyping/commit/81c61117fff150bcdd15f141afc223488b545f69))
+* add Divider component to next/ ([#4844](https://github.com/equinor/design-system-roma-prototyping/issues/4844)) ([b5706db](https://github.com/equinor/design-system-roma-prototyping/commit/b5706dbb3dbb8e3617660e99bfa98a384feb3ed1))
+* add Link component  ([#4601](https://github.com/equinor/design-system-roma-prototyping/issues/4601)) ([05019e2](https://github.com/equinor/design-system-roma-prototyping/commit/05019e2a4686a7df7818c295048c3dd116b84326))
+* add Radio component for EDS 2.0 ([#4388](https://github.com/equinor/design-system-roma-prototyping/issues/4388)) ([b9cd9c3](https://github.com/equinor/design-system-roma-prototyping/commit/b9cd9c3931bbe666d2739b94335419107559a23b))
+* add Search component to next ([#4637](https://github.com/equinor/design-system-roma-prototyping/issues/4637)) ([83a8446](https://github.com/equinor/design-system-roma-prototyping/commit/83a8446fe10aab3fadfca2685a5c98b211a72e97))
+* add Slot utility and asChild prop to Link ([#4778](https://github.com/equinor/design-system-roma-prototyping/issues/4778)) ([fae4e42](https://github.com/equinor/design-system-roma-prototyping/commit/fae4e4248e6fb9a2f7466f9a6dbc2d4763fe30f0))
+* add TextArea component ([#4652](https://github.com/equinor/design-system-roma-prototyping/issues/4652)) ([cfd254c](https://github.com/equinor/design-system-roma-prototyping/commit/cfd254cc829322e62c8417e69b0cdc3ce035cf40))
+* add Tooltip component to next/ ([#4751](https://github.com/equinor/design-system-roma-prototyping/issues/4751)) ([dc96a24](https://github.com/equinor/design-system-roma-prototyping/commit/dc96a24122908404d6a4c26b1bec0cdc51813f98))
+* Badge EDS 2.0 ([#4999](https://github.com/equinor/design-system-roma-prototyping/issues/4999)) ([2235377](https://github.com/equinor/design-system-roma-prototyping/commit/2235377b318cb4c75712d6b2380d16caa3aef721))
+* Checkbox 2.0 component ([#4208](https://github.com/equinor/design-system-roma-prototyping/issues/4208)) ([6171f95](https://github.com/equinor/design-system-roma-prototyping/commit/6171f95b4581d2e36d5bd14ea1204ba7357bb113))
+* CSS-first typography system and Foundation element styles ([#4660](https://github.com/equinor/design-system-roma-prototyping/issues/4660)) ([284fbf6](https://github.com/equinor/design-system-roma-prototyping/commit/284fbf667d497ae24410ffbb9f7acff1e5e91c36)), closes [#4659](https://github.com/equinor/design-system-roma-prototyping/issues/4659)
+* Dialog EDS 2.0 ([#4956](https://github.com/equinor/design-system-roma-prototyping/issues/4956)) ([e2f6df2](https://github.com/equinor/design-system-roma-prototyping/commit/e2f6df2f62991d3f5a0205b416ffcf5d880a3d17))
+* **eds-core-react:** add next ChipRl and Badge components ([3d67fe1](https://github.com/equinor/design-system-roma-prototyping/commit/3d67fe15ba2545ab9f429ee6cf0376a972b1bb21))
+* **eds-core-react:** create button label typography css ([#4660](https://github.com/equinor/design-system-roma-prototyping/issues/4660)) ([04145ba](https://github.com/equinor/design-system-roma-prototyping/commit/04145ba736a474ddc2588b53a6a5f642dc74ad65))
+* **eds-icons:** add new icons from Figma sync ([cc7cec8](https://github.com/equinor/design-system-roma-prototyping/commit/cc7cec8ae3ef2f615dbb4d7b132fdef8936ddec0))
+* Field + HelperMessage ([#4332](https://github.com/equinor/design-system-roma-prototyping/issues/4332)) ([6bbbad5](https://github.com/equinor/design-system-roma-prototyping/commit/6bbbad5feb18963054ef502cc83a6751c7d8592a))
+* Icon Component 2.0 ([#4331](https://github.com/equinor/design-system-roma-prototyping/issues/4331)) ([95c589a](https://github.com/equinor/design-system-roma-prototyping/commit/95c589aaeb9883793e3ee59d7e4079614027bbfa))
+* **next:** ✨ add Input and TextField component for EDS 2.0 ([8dd4dca](https://github.com/equinor/design-system-roma-prototyping/commit/8dd4dca74a6699a5cd1dfbf8977117c9e48fc445))
+* **next:** Switch component for EDS 2.0 ([#4387](https://github.com/equinor/design-system-roma-prototyping/issues/4387)) ([0a5226d](https://github.com/equinor/design-system-roma-prototyping/commit/0a5226d45bb5664c758240d03e3c0331369c875b))
+* Select EDS 2.0 ([#4918](https://github.com/equinor/design-system-roma-prototyping/issues/4918)) ([0be44ad](https://github.com/equinor/design-system-roma-prototyping/commit/0be44adfbf0a45ad27b6b6b5f3a0cfb7337c4ec9))
+
+
+### 🐛 Fixed
+
+* add missing BEM classes to next components ([#4638](https://github.com/equinor/design-system-roma-prototyping/issues/4638)) ([0cf8194](https://github.com/equinor/design-system-roma-prototyping/commit/0cf8194431b70bb56cb7da5af14e53c8be0dd7ac))
+* adjust release to patch version 2.3.1 ([8bf323e](https://github.com/equinor/design-system-roma-prototyping/commit/8bf323ee75c8477338c719e20a208f64835fb7c2))
+* align Checkbox CSS with Radio token usage ([#4393](https://github.com/equinor/design-system-roma-prototyping/issues/4393)) ([b5f886d](https://github.com/equinor/design-system-roma-prototyping/commit/b5f886d8eb7ca0ac39786ae9a016ab47ea20a3b2))
+* align Switch with selection controls 2.0 ([#4394](https://github.com/equinor/design-system-roma-prototyping/issues/4394)) ([ba2d2fa](https://github.com/equinor/design-system-roma-prototyping/commit/ba2d2fab0b8e09ddcae13a4151c573a018051b68))
+* correct beta version to 2.3.0-beta.0 ([#4370](https://github.com/equinor/design-system-roma-prototyping/issues/4370)) ([3eead88](https://github.com/equinor/design-system-roma-prototyping/commit/3eead88658d62773556a17051f7f8eac4e1d5b19))
+* correct Chip height to match Figma design spec ([#4871](https://github.com/equinor/design-system-roma-prototyping/issues/4871)) ([3364526](https://github.com/equinor/design-system-roma-prototyping/commit/3364526b79b697bdd33019eab6d7c8d25d53294e))
+* correct TextArea helper message spacing in both density modes ([#4986](https://github.com/equinor/design-system-roma-prototyping/issues/4986)) ([f1a3b4d](https://github.com/equinor/design-system-roma-prototyping/commit/f1a3b4dcab016f4236e0d10ffcf63af4e25d6486))
+* **eds-core-react:** remove box-shadow from Switch handle ([#4980](https://github.com/equinor/design-system-roma-prototyping/issues/4980)) ([2f0dd96](https://github.com/equinor/design-system-roma-prototyping/commit/2f0dd96d685107e5d770bbfb00b8dde8cf80869a)), closes [#4838](https://github.com/equinor/design-system-roma-prototyping/issues/4838)
+* **eds-core-react:** replace styled-components Progress with spinning icon in Autocomplete ([#4982](https://github.com/equinor/design-system-roma-prototyping/issues/4982)) ([9581f89](https://github.com/equinor/design-system-roma-prototyping/commit/9581f892ef28d8d4fa1195ef05818c5fadf34f4c))
+* improve Input component alignment and sizing ([#4531](https://github.com/equinor/design-system-roma-prototyping/issues/4531)) ([7564780](https://github.com/equinor/design-system-roma-prototyping/commit/756478081e2a549d9bd837bbc0f33dda825c80bf))
+* rely on parent flex gap for Field helper-message spacing ([#5080](https://github.com/equinor/design-system-roma-prototyping/issues/5080)) ([8a18fb6](https://github.com/equinor/design-system-roma-prototyping/commit/8a18fb697aaeab3bdab6f14bd3a47160377b58a7))
+* replace styled-components Tooltip with next/Tooltip in TextField and TextArea ([#4981](https://github.com/equinor/design-system-roma-prototyping/issues/4981)) ([e3ea724](https://github.com/equinor/design-system-roma-prototyping/commit/e3ea724eb99e9a3511686c07a2d7b9232f38cb10))
+* update Field stories to use Input component ([#4397](https://github.com/equinor/design-system-roma-prototyping/issues/4397)) ([91a8626](https://github.com/equinor/design-system-roma-prototyping/commit/91a86264b65e3d888c4688e73af431a6e2d65802))
+* update Icon to follow next/ conventions ([#4612](https://github.com/equinor/design-system-roma-prototyping/issues/4612)) ([559d022](https://github.com/equinor/design-system-roma-prototyping/commit/559d0222718765aa41702b4151e38e81114924ed))
+* use EDS Button for TextField info icon and fix helper message gap ([#4569](https://github.com/equinor/design-system-roma-prototyping/issues/4569)) ([28b0035](https://github.com/equinor/design-system-roma-prototyping/commit/28b0035fb8a699098f5fc9ae6356ff1f3b3781a6))
+
+
+### ♻️ Refactoring
+
+* **eds-core-react:** migrate Banner.Message and Chip label off TypographyNext ([#4984](https://github.com/equinor/design-system-roma-prototyping/issues/4984)) ([ea19590](https://github.com/equinor/design-system-roma-prototyping/commit/ea195904f5321e89930f3d0247025ac4deeb9283)), closes [#4835](https://github.com/equinor/design-system-roma-prototyping/issues/4835) [#4836](https://github.com/equinor/design-system-roma-prototyping/issues/4836)
+* migrate Field off TypographyNext ([#4843](https://github.com/equinor/design-system-roma-prototyping/issues/4843)) ([6cbc34d](https://github.com/equinor/design-system-roma-prototyping/commit/6cbc34d791eb4c7219a523826c26cf08e8d3dce2))
+* simplify Button CSS by removing TypographyNext and using explicit heights ([#4514](https://github.com/equinor/design-system-roma-prototyping/issues/4514)) ([79fa2d6](https://github.com/equinor/design-system-roma-prototyping/commit/79fa2d6e57997aca9f9d3bce9b8566f21eaa74df))
+* use semantic disabled tokens in next components ([#4529](https://github.com/equinor/design-system-roma-prototyping/issues/4529)) ([6d4bbd9](https://github.com/equinor/design-system-roma-prototyping/commit/6d4bbd9a292e85b8b5f8bf8fd018b78ae2501fad))
+
 ## [2.8.0-beta.1](https://github.com/equinor/design-system/compare/eds-core-react-next@v2.7.0-beta.1...eds-core-react-next@v2.8.0-beta.1) (2026-06-23)
 
 

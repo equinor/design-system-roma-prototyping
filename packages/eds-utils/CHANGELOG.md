@@ -5,6 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.0](https://github.com/equinor/design-system-roma-prototyping/compare/eds-utils@v2.2.1...eds-utils@v3.0.0) (2026-06-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* **eds-core-react, eds-tokens:** add spacing foundation variables, fix names in old variables and remove density specific spacing variables. eds-tokens package is now a peerDependency in eds-core-react to support using the new variables. ([#4200](https://github.com/equinor/design-system-roma-prototyping/issues/4200))
+* **eds-core-react, eds-utils:** Improve onChange handler typing for TextField component and remove multiline support ([#4134](https://github.com/equinor/design-system-roma-prototyping/issues/4134))
+
+### ✨ Added
+
+* **eds-core-react, eds-tokens:** add spacing foundation variables, fix names in old variables and remove density specific spacing variables. eds-tokens package is now a peerDependency in eds-core-react to support using the new variables. ([#4200](https://github.com/equinor/design-system-roma-prototyping/issues/4200)) ([7621866](https://github.com/equinor/design-system-roma-prototyping/commit/7621866194f67d4118167285e9209c5a5194217c))
+* **eds-core-react, eds-utils:** Create base typography component and opinionated heading and paragraph ([b2130c6](https://github.com/equinor/design-system-roma-prototyping/commit/b2130c6f2be82e63549caacf876f263253292f87)), closes [#4125](https://github.com/equinor/design-system-roma-prototyping/issues/4125)
+* support React 18 and 19 ([#4648](https://github.com/equinor/design-system-roma-prototyping/issues/4648)) ([38ff591](https://github.com/equinor/design-system-roma-prototyping/commit/38ff5918f95a799e1d1ab44178b4647b6dd00887))
+
+
+### 🐛 Fixed
+
+* **eds-core-react, eds-utils:** 🐛Table - Fix Firefox table header wrapping issue ([#3957](https://github.com/equinor/design-system-roma-prototyping/issues/3957)) ([a973b81](https://github.com/equinor/design-system-roma-prototyping/commit/a973b819fe36fd83870cbacccc4e102274a5a05b))
+* **eds-core-react, eds-utils:** Improve onChange handler typing for TextField component and remove multiline support ([#4134](https://github.com/equinor/design-system-roma-prototyping/issues/4134)) ([72c5f78](https://github.com/equinor/design-system-roma-prototyping/commit/72c5f78c1eba95beeb1e4363b3808168f3683745))
+* forward child refs in Tooltip and TabList on React 18 ([#4904](https://github.com/equinor/design-system-roma-prototyping/issues/4904)) ([d095239](https://github.com/equinor/design-system-roma-prototyping/commit/d0952399a167ec5a54e7b99353007d6649191d02))
+* release eds-core-react@2.6.1 and eds-utils@2.2.1 with fixed workspace deps ([49fc5b7](https://github.com/equinor/design-system-roma-prototyping/commit/49fc5b7ac579829ec068a57f6ded3236448edff2))
+* Use semver ranges for internal eds dependencies ([#4163](https://github.com/equinor/design-system-roma-prototyping/issues/4163)) ([7cc8abe](https://github.com/equinor/design-system-roma-prototyping/commit/7cc8abe64f64f4e5a9081e21e19f71947f354c14))
+
 ## [2.2.1](https://github.com/equinor/design-system/compare/eds-utils@v2.2.0...eds-utils@v2.2.1) (2026-05-20)
 
 

@@ -5,6 +5,52 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.0](https://github.com/equinor/design-system-roma-prototyping/compare/eds-tokens@v2.3.1...eds-tokens@v3.0.0) (2026-06-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* **eds-tokens:** update codeSyntax of the spacing and typography tokens ([#4227](https://github.com/equinor/design-system-roma-prototyping/issues/4227))
+* **eds-core-react, eds-tokens:** add spacing foundation variables, fix names in old variables and remove density specific spacing variables. eds-tokens package is now a peerDependency in eds-core-react to support using the new variables. ([#4200](https://github.com/equinor/design-system-roma-prototyping/issues/4200))
+* **eds-tokens,eds-core-react:** move typography css foundation and remove core style ([#4173](https://github.com/equinor/design-system-roma-prototyping/issues/4173))
+
+### ✨ Added
+
+* **eds-color-palette-generator,eds-tokens,eds-tokens-build:** use oklch in the palette config ([#4081](https://github.com/equinor/design-system-roma-prototyping/issues/4081)) ([186cc5f](https://github.com/equinor/design-system-roma-prototyping/commit/186cc5f5866c71f5aa2a0e4ed0dddb2a82a892f2))
+* **eds-color-palette-generator:** add CLI tool to generate color palettes ([#4033](https://github.com/equinor/design-system-roma-prototyping/issues/4033)) ([07ec1de](https://github.com/equinor/design-system-roma-prototyping/commit/07ec1de914c57820a04dfcf74da8b9ba324fdc7a))
+* **eds-color-palette-generator:** add optional second color input to palette generator ([#4247](https://github.com/equinor/design-system-roma-prototyping/issues/4247)) ([5eaf173](https://github.com/equinor/design-system-roma-prototyping/commit/5eaf173feecb855ebef34718a1a584d0384912c6))
+* **eds-core-react, eds-tokens:** add spacing foundation variables, fix names in old variables and remove density specific spacing variables. eds-tokens package is now a peerDependency in eds-core-react to support using the new variables. ([#4200](https://github.com/equinor/design-system-roma-prototyping/issues/4200)) ([7621866](https://github.com/equinor/design-system-roma-prototyping/commit/7621866194f67d4118167285e9209c5a5194217c))
+* **eds-tokens, eds-demo, eds-tailwind:** use single css variables export ([#4098](https://github.com/equinor/design-system-roma-prototyping/issues/4098)) ([15689fb](https://github.com/equinor/design-system-roma-prototyping/commit/15689fbd0b7df201be3be1a4f5774a5f44e6403e))
+* **eds-tokens,eds-core-react:** move typography css foundation and remove core style ([#4173](https://github.com/equinor/design-system-roma-prototyping/issues/4173)) ([0a20351](https://github.com/equinor/design-system-roma-prototyping/commit/0a20351e68d61334f877bc6ef0a05fcfc1c99c95))
+* **eds-tokens:** add disabled state tokens ([#4525](https://github.com/equinor/design-system-roma-prototyping/issues/4525)) ([e8312bb](https://github.com/equinor/design-system-roma-prototyping/commit/e8312bb075956016b72d3250bfaa03cab5753bac))
+* **eds-tokens:** add elevation shadow tokens for EDS 2.0 ([#4783](https://github.com/equinor/design-system-roma-prototyping/issues/4783)) ([f775560](https://github.com/equinor/design-system-roma-prototyping/commit/f775560a46aba2207f175405639c248675b30116))
+* **eds-tokens:** add nested TypeScript token output ([#4538](https://github.com/equinor/design-system-roma-prototyping/issues/4538)) ([6100738](https://github.com/equinor/design-system-roma-prototyping/commit/6100738f24a677a3adeebbbae0b079e3c3e7d644))
+* **eds-tokens:** add spacing tokens to all build outputs ([#4587](https://github.com/equinor/design-system-roma-prototyping/issues/4587)) ([5a5b1f0](https://github.com/equinor/design-system-roma-prototyping/commit/5a5b1f049b899095034b9fe66fde040d6e2d4ee7))
+* **eds-tokens:** create and implement new build scripts ([#4004](https://github.com/equinor/design-system-roma-prototyping/issues/4004)) ([522baa3](https://github.com/equinor/design-system-roma-prototyping/commit/522baa375b0ca3f8343f2f441aa24ce9cd2efa58))
+* **eds-tokens:** generate spacing and typography variables ([#4250](https://github.com/equinor/design-system-roma-prototyping/issues/4250)) ([6a5ef2c](https://github.com/equinor/design-system-roma-prototyping/commit/6a5ef2cf7a3821fd67809123f20f5f647ca43935))
+* **eds-tokens:** include concept tokens in semantic TS/CSS/JSON build output ([#4641](https://github.com/equinor/design-system-roma-prototyping/issues/4641)) ([adb74eb](https://github.com/equinor/design-system-roma-prototyping/commit/adb74eb9b9ed3c28b77a7b264b272debec176a79))
+* **eds-tokens:** update codeSyntax of the spacing and typography tokens ([#4227](https://github.com/equinor/design-system-roma-prototyping/issues/4227)) ([31a6abc](https://github.com/equinor/design-system-roma-prototyping/commit/31a6abc2d99aa9e6877358718ff57ad6d19be7b3))
+* **eds-tokens:** update-tokens ([#4010](https://github.com/equinor/design-system-roma-prototyping/issues/4010)) ([8c1df55](https://github.com/equinor/design-system-roma-prototyping/commit/8c1df552fd33a8e5f209b13a72367a6f2b503d35))
+
+
+### 🐛 Fixed
+
+* **eds-core-react:** rename text-icon className to eds-typography-text-icon to prevent conflicts and support using typography component as link ([#4233](https://github.com/equinor/design-system-roma-prototyping/issues/4233)) ([9069372](https://github.com/equinor/design-system-roma-prototyping/commit/906937262b7cf395a03d1867170791d046fd4734))
+* **eds-tokens-build:** strip concept token self-references from static CSS ([#4806](https://github.com/equinor/design-system-roma-prototyping/issues/4806)) ([61ba4b5](https://github.com/equinor/design-system-roma-prototyping/commit/61ba4b5d3c61dd4625cd481866e261246f3c9e05))
+* **eds-tokens:** correct 5xl tracking-wide alias in UI Body mode ([#4885](https://github.com/equinor/design-system-roma-prototyping/issues/4885)) ([4c4af83](https://github.com/equinor/design-system-roma-prototyping/commit/4c4af8365801e794b64b4b636a87f6db36a395a5)), closes [#4876](https://github.com/equinor/design-system-roma-prototyping/issues/4876)
+* **eds-tokens:** emit nested typography TS with inlined size extras ([#4915](https://github.com/equinor/design-system-roma-prototyping/issues/4915)) ([ea9cae3](https://github.com/equinor/design-system-roma-prototyping/commit/ea9cae3ca7feb84615012d52aa7b8b92d82b5b5a))
+* emit explicit dark-scope rules instead of light-dark() in tokens ([#4864](https://github.com/equinor/design-system-roma-prototyping/issues/4864)) ([e519ff2](https://github.com/equinor/design-system-roma-prototyping/commit/e519ff2113e13f7a826772cebc9abeda2f04cee7))
+* propagate density-aware spacing aliases to comfortable mode ([#5091](https://github.com/equinor/design-system-roma-prototyping/issues/5091)) ([331477d](https://github.com/equinor/design-system-roma-prototyping/commit/331477decf681fce4db1a385c8533e2574f38ca4))
+* re-declare semantic color tokens on data-color-scheme scopes ([#4873](https://github.com/equinor/design-system-roma-prototyping/issues/4873)) ([a43fd38](https://github.com/equinor/design-system-roma-prototyping/commit/a43fd38c1af791404a9da6db792f90ffec39e712))
+* register typography length properties and update docs ([#4831](https://github.com/equinor/design-system-roma-prototyping/issues/4831)) ([34095a8](https://github.com/equinor/design-system-roma-prototyping/commit/34095a8bb5cc448c7866235bdfde2ea689232b7e))
+* unknown and high security alerts from radix. ([#4313](https://github.com/equinor/design-system-roma-prototyping/issues/4313)) ([3a9a666](https://github.com/equinor/design-system-roma-prototyping/commit/3a9a666f9188a1d0bee0f3ebcff1a7de8b03fe18))
+* Use semver ranges for internal eds dependencies ([#4163](https://github.com/equinor/design-system-roma-prototyping/issues/4163)) ([7cc8abe](https://github.com/equinor/design-system-roma-prototyping/commit/7cc8abe64f64f4e5a9081e21e19f71947f354c14))
+
+
+### ♻️ Refactoring
+
+* **eds-tokens:** tokens build sync setup ([#3993](https://github.com/equinor/design-system-roma-prototyping/issues/3993)) ([df07db9](https://github.com/equinor/design-system-roma-prototyping/commit/df07db924e2680f6edf828229b101bb38166be06))
+
 ## [2.3.1](https://github.com/equinor/design-system/compare/eds-tokens@v2.3.0...eds-tokens@v2.3.1) (2026-06-23)
 
 
