@@ -19,8 +19,17 @@ export default defineConfig({
       formats: ['es'],
     },
     rolldownOptions: {
-      external: [/^node:/, 'fs', 'path', 'os', 'dotenv', 'dotenv/config'],
+      external: [
+        /^node:/,
+        'fs',
+        'path',
+        'os',
+        'crypto',
+        'process',
+        'dotenv',
+        'dotenv/config',
+      ],
     },
   },
-  plugins: [dts({ rollupTypes: true })],
+  plugins: [dts({ bundleTypes: true })],
 })

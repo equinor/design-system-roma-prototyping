@@ -48,11 +48,12 @@ export default defineConfig({
     },
     rolldownOptions: {
       external: [
-        'node:fs',
-        'node:fs/promises',
-        'node:path',
-        'node:process',
+        /^node:/,
+        'fs',
         'path',
+        'os',
+        'crypto',
+        'process',
         'style-dictionary',
         'style-dictionary/types',
         'style-dictionary/utils',
@@ -69,5 +70,5 @@ export default defineConfig({
       },
     },
   },
-  plugins: [dts({ rollupTypes: true })],
+  plugins: [dts({ bundleTypes: true })],
 })

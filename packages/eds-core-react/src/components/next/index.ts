@@ -30,14 +30,6 @@ export type { InputProps } from './Input'
 export { TextField } from './TextField'
 export type { TextFieldProps } from './TextField'
 
-export { ChipRl } from './ChipRl'
-export type {
-  ChipRlProps,
-  ChipRlColor,
-  ChipRlSemanticColor,
-  ChipRlDatavizColor,
-} from './ChipRl'
-
 export { TextArea } from './TextArea'
 export type { TextAreaProps } from './TextArea'
 
@@ -69,12 +61,54 @@ export type { ChipProps, ChipTone, ChipVariant } from './Chip'
 export { Divider } from './Divider'
 export type { DividerProps } from './Divider'
 
+export { Accordion } from './Accordion'
+export type {
+  AccordionProps,
+  AccordionItemProps,
+  AccordionHeaderProps,
+  AccordionPanelProps,
+} from './Accordion'
+
+export { Menu, MenuItem } from './Menu'
+export type { MenuProps, MenuItemProps } from './Menu'
+
+export { Autocomplete } from './Autocomplete'
+export type { AutocompleteProps } from './Autocomplete'
+
+export { Select } from './Select'
+export type { SelectProps } from './Select'
+
 export { Badge } from './Badge'
 export type {
   BadgeProps,
-  BadgeSize,
+  BadgeTone,
   BadgeEmphasis,
-  BadgeColor,
-  BadgeSemanticColor,
-  BadgeDatavizColor,
+  BadgeVariant,
 } from './Badge'
+
+export { BadgeRl } from './BadgeRl'
+export type {
+  BadgeRlProps,
+  BadgeRlSize,
+  BadgeRlEmphasis,
+  BadgeRlColor,
+  BadgeRlSemanticColor,
+  BadgeRlDatavizColor,
+} from './BadgeRl'
+
+export { ChipRl } from './ChipRl'
+export type {
+  ChipRlProps,
+  ChipRlColor,
+  ChipRlSemanticColor,
+  ChipRlDatavizColor,
+} from './ChipRl'
+
+export { Dialog } from './Dialog'
+export type {
+  DialogActionsProps,
+  DialogContentProps,
+  DialogHeaderProps,
+  DialogProps,
+  DialogTitleProps,
+} from './Dialog'

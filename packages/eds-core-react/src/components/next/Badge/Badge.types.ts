@@ -1,71 +1,52 @@
 import type { HTMLAttributes, ReactNode } from 'react'
-import type { IconData } from '@equinor/eds-icons'
 
-/** Badge sizes */
-export type BadgeSize = 'md' | 'sm' | 'xs'
-
-/** Visual emphasis level */
-export type BadgeEmphasis = 'primary' | 'secondary'
-
-/** Semantic color tones resolved via the dynamic token system */
-export type BadgeSemanticColor =
+/**
+ * Color tone for theming — maps to `data-color-appearance`.
+ * - `neutral`: Neutral gray tones (default)
+ * - `accent`: Brand/action color
+ * - `success`: Positive/confirmation
+ * - `info`: Informational
+ * - `warning`: Caution/alerts
+ * - `danger`: Destructive/error
+ */
+export type BadgeTone =
   | 'neutral'
   | 'accent'
-  | 'danger'
-  | 'warning'
-  | 'info'
   | 'success'
+  | 'info'
+  | 'warning'
+  | 'danger'
 
-/** Data-visualization colors from the EDS infographic palette */
-export type BadgeDatavizColor =
-  | 'moss-green'
-  | 'energy-red'
-  | 'weathered-red'
-  | 'slate-blue'
-  | 'spruce-wood'
-  | 'mist-blue'
-  | 'lichen-green'
-  | 'purple-berry'
-  | 'pink-rose'
-  | 'pink-salmon'
-  | 'green-cucumber'
-  | 'green-succulent'
-  | 'green-mint'
-  | 'blue-ocean'
-  | 'blue-overcast'
-  | 'blue-sky'
+/**
+ * Visual emphasis level.
+ * - `low`: Subtle background (canvas) or light border
+ * - `medium`: More prominent fill or medium border
+ */
+export type BadgeEmphasis = 'low' | 'medium'
 
-/** All available badge colors */
-export type BadgeColor = BadgeSemanticColor | BadgeDatavizColor
+/**
+ * Visual style variant.
+ * - `solid`: Filled background, no border
+ * - `outlined`: Border, transparent or canvas background
+ */
+export type BadgeVariant = 'solid' | 'outlined'
 
 export type BadgeProps = {
-  /** Badge content */
-  children: ReactNode
   /**
-   * Size of the badge.
-   * - `md` (default): 20 px height
-   * - `sm`: 16 px height
-   * - `xs`: 12 px height
-   * @default 'md'
+   * Color tone for theming.
+   * @default 'neutral'
    */
-  size?: BadgeSize
+  tone?: BadgeTone
   /**
    * Visual emphasis level.
-   * - `primary`: strong filled background with high-contrast text
-   * - `secondary`: subtle muted background with coloured text
-   * @default 'primary'
+   * @default 'low'
    */
   emphasis?: BadgeEmphasis
   /**
-   * Colour of the badge. Supports semantic tones that integrate with
-   * the EDS dynamic token system, plus data-visualisation colours from
-   * the EDS infographic palette.
-   * @default 'neutral'
+   * Visual style variant.
+   * @default 'solid'
    */
-  color?: BadgeColor
-  /**
-   * Optional leading icon from `@equinor/eds-icons`.
-   * Rendered at a size proportional to the badge.
-   */
-  icon?: IconData
-} & Omit<HTMLAttributes<HTMLSpanElement>, 'color'>
+  variant?: BadgeVariant
+  /** Badge label text */
+  children?: ReactNode
+} & HTMLAttributes<HTMLSpanElement>
